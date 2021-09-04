@@ -1,9 +1,7 @@
-package com.charusat;
-
+package com.company;
 import java.util.Scanner;
-
-public class Chef_Operator {
-    public static void main(String[] args) {
+public class ChefAndOperator {
+    public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of test cases");
         int t = sc.nextInt();
