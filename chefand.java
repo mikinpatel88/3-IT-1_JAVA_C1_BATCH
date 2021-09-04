@@ -10,15 +10,19 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-			Scanner sc = new Scanner(System.in);
-	    double X = sc.nextDouble();
-	    double Y = sc.nextDouble();
-	    
-	    if (X % 5 == 0 && Y >= X + 0.5){
-	        Y = Y - X - 0.5;
-	    }
-	    
-		System.out.printf("%.2f",Y);
-	
+		Scanner sc = new Scanner(System.in);
+int T = sc.nextInt();
+for(int i =1 ; i<=T ; i++)
+{
+   int A = sc.nextInt();
+   int B = sc.nextInt();
+   if(A>B)
+   {
+       System.out.println(A + " " + (A+B));
+   }
+   else{
+       System.out.println(B + " " + (B+A));
+   }
+}
 	}
 }

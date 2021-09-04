@@ -11,14 +11,14 @@ class Codechef
 	{
 		// your code goes here
 			Scanner sc = new Scanner(System.in);
-	    double X = sc.nextDouble();
-	    double Y = sc.nextDouble();
-	    
-	    if (X % 5 == 0 && Y >= X + 0.5){
-	        Y = Y - X - 0.5;
-	    }
-	    
-		System.out.printf("%.2f",Y);
-	
+		int t = sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int n = sc.nextInt();
+		    int sum = 0;
+		    for(;n>0;n=n/10){
+		        sum = sum + n%10;
+		    }
+		    System.out.println(sum);
+		}sc.close();
 	}
 }
