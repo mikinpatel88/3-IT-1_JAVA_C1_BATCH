@@ -1,40 +1,31 @@
-package com.charusat;
+/* package codechef; // don't place package name! */
 
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class FirstAndLast {
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-
-        System.out.println("Enter number of cases: ");
-        int T = sc.nextInt();
-        int n [] = new int[10];
-        for(int i = 0; i<T;i++)
-        {
-            System.out.println("Enter number "+(i+1)+": ");
-             n[i] = sc.nextInt();
-        }
-        for(int j = 0;j<T;j++)
-        {
-            int last = 0 , first = 0;
-            last = n[j]%10;
-             first = n[j];
-            while( first>=10)
-            {
-                first = first / 10;
-            }
-            System.out.println("Sum of first and last of number " + (j+1)+" = "+(last+first));
-        }
-
-
-
-
-
-
-
-
-
-    }
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t>0)
+		{ 
+		    int n=sc.nextInt();
+		    int first=0;
+		    int last=n%10;
+		    while(n>0)
+		    {
+		        first=n%10;
+		        n=n/10;
+		    }
+		    int temp=first;
+		int sum=temp+last;
+		System.out.println(sum);
+		t=t-1;
+		}
+	}
 }
